@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finca Campestre El Rinconcito - Venta</title>
+    <style>
+        :root {
+            --primary: #2c5e3b;
+            --primary-light: #448654;
+            --secondary: #8d775f;
+            --dark: #222222;
+            --light: #f4f7f5;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        header {
+            background: linear-gradient(rgba(44, 94, 59, 0.85), rgba(44, 94, 59, 0.95)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .price-tag {
+            background-color: var(--white);
+            color: var(--primary);
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--primary);
+        }
+
+        .section h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .grid-item {
+            background-color: #fcfdfc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+
+        .grid-item h3 {
+            color: var(--primary-light);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: bold;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fbf9;
+        }
+
+        .photo-placeholder-box {
+            background-color: #e8ece9;
+            border: 2px dashed #b5c2b9;
+            color: #556b5c;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            border-left: none;
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            color: var(--white);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--primary);
+            padding: 12px 35px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-contact:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #777777;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8e4;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            .section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FINCA CAMPESTRE "EL RINCONCITO"</h1>
+        <p>Diseño, confort térmico, tranquilidad y conectividad total en la Vereda Barcelona (Villavicencio)</p>
+        <div class="price-tag">$530.000.000 COP</div>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>Presentación General</h2>
+            <p>Ubicada en una de las zonas campestres de mayor valorización y tranquilidad de Villavicencio, la Finca "El Rinconcito" es una propiedad que combina el confort y la tranquilidad con el disfrute de la naturaleza llanera. Con un terreno plano de 1.280 m² (que se amplía hacia el fondo garantizando total privacidad), esta propiedad fue planificada para ofrecer una experiencia de descanso cómoda, sostenible y de muy bajo costo de mantenimiento.</p>
+            <div class="photo-placeholder-box">
+                📸 <strong>Sugerencia de Foto:</strong> Coloca aquí la imagen de la <em>Fachada Principal o Vista Exterior General</em> (pág. 2 o 13 del Registro Fotográfico).
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>1. Ubicación, Acceso y Entorno</h2>
+            <p style="margin-bottom: 15px;"><strong>Conectividad Exclusiva y Ubicación Estratégica:</strong> Ideal tanto para el descanso como para una vivienda permanente, tomando como referencia puntos clave de conectividad:</p>
+            <ul>
+                <li><strong>A solo 15 minutos</strong> de la salida del túnel de Villavicencio.</li>
+                <li><strong>Ruta de acceso directo:</strong> Saliendo por la vía a Puerto López e ingresando por la vía principal a la Universidad de los Llanos (Unillanos), tomando como punto de referencia el monumento al Soldado Caído, justo antes de la base aérea de Apiay.</li>
+                <li><strong>Privacidad total:</strong> El acceso final a la propiedad se realiza a través de una vía en servidumbre destapada, lo que garantiza un entorno aislado del ruido vial, seguro y sumamente privado.</li>
+            </ul>
+            <div class="photo-placeholder-box">
+                📸 <strong>Sugerencia de Foto:</strong> Coloca aquí la imagen del <em>Camino de Acceso - Servidumbre</em> (pág. 1 del Registro Fotográfico).
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Descripción General y Distribución Espacial</h2>
+            <p style="margin-bottom: 20px;">Emplazada sobre el terreno plano de 1.280 m² que se ensancha hacia el fondo para mayor privacidad, la casa campestre de dos pisos cuenta con la siguiente distribución:</p>
+            
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Primer Piso (Área Social e Interior)</h3>
+                    <p>Cuenta en su zona interna con una cómoda habitación, un baño social completo, cocina abierta con mesón de servicio más salón-comedor integrado.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Gran Salón Exterior (Porche)</h3>
+                    <p>Conectado directamente al primer piso, se destaca un espectacular porche cubierto de <strong>46 m²</strong>. Funciona como el corazón exterior de la casa, albergando una generosa sala y comedor independientes y posibilidad de incluir hamacas, protegidos totalmente del sol.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Segundo Piso (Zona Privada)</h3>
+                    <p>Dispone de dos amplias habitaciones, cada una con su propia <strong>terraza independiente</strong>. El nivel se complementa con un baño familiar completo y una <strong>tercera terraza adicional</strong>, ideal para contemplar los atardeceres llaneros.</p>
+                </div>
+            </div>
+
+            <div class="photo-placeholder-box">
+                📸 <strong>Sugerencia de Fotos:</strong> Crea una pequeña galería aquí con las imágenes del <em>Porche Exterior</em> (pág. 8), <em>Cocina Abierta</em> (pág. 7) y <em>Vistas desde el Segundo Piso</em> (pág. 11).
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Ventajas Técnicas, Sostenibilidad y Conectividad</h2>
+            <ul>
+                <li><strong>Confort Térmico y Durabilidad (Cubierta Tipo Colonial Verde):</strong> Estructura protegida con láminas de acero preformadas tipo teja colonial de color verde. Combina estética impecable, alta resistencia climática y excelente aislamiento, manteniendo el porche social fresco de manera natural.</li>
+                <li><strong>Diseño Paisajístico y Mitigación Hidráulica (El Caño):</strong> El costado derecho colinda con un caño natural intervenido con <strong>12 metros lineales de revestimiento artesanal en piedra</strong>. Esta magnífica obra civil estabiliza y encauza el agua de forma limpia, creando un entorno seguro, delimitado y estético.</li>
+                <li><strong>Conectividad Total de Alta Velocidad:</strong> Cuenta con servicio activo de <strong>Internet por Fibra Óptica</strong>. Un atributo escaso y altamente valorado que permite el teletrabajo fluido y streaming sin interrupciones.</li>
+                <li><strong>Autonomía en Suministro de Agua:</strong> Sistema independiente mediante <strong>aljibe propio y motobomba</strong>, surtiendo un tanque elevado de reserva de 500 litros que distribuye por gravedad. Costo de factura de agua equivalente a cero ($0).</li>
+                <li><strong>Servicios Públicos y Proyección de Gas:</strong> Red de energía eléctrica convencional con recolección de basuras mensual. Cocción actual con cilindro de gas propano, con la red de gas natural ya disponible de forma subterránea en la vía de acceso para una conexión directa a futuro.</li>
+            </ul>
+            <div class="photo-placeholder-box">
+                📸 <strong>Sugerencia de Foto:</strong> Coloca aquí la foto destacada del <em>Caño Revestido en Piedra</em> (como la espectacular imagen real de pág. 14).
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Costos de Mantenimiento Mensual (Economía de Operación)</h2>
+            <p>Al ser un lote particular, la propiedad está <strong>libre de cuotas de administración</strong>, garantizando un bajísimo costo fijo:</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Estado de la Propiedad</th>
+                            <th>Energía y Aseo</th>
+                            <th>Internet (Fibra Óptica)</th>
+                            <th>Total Mensual Aprox.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Temporada Baja (Deshabitada)</strong></td>
+                            <td>$40.000 - $45.000</td>
+                            <td>$70.000 fijos</td>
+                            <td><strong>$110.000 - $115.000 COP</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temporada Alta (En Uso / Ocupada)</strong></td>
+                            <td>$70.000 - $75.000</td>
+                            <td>$70.000 fijos</td>
+                            <td><strong>$140.000 - $145.000 COP</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section contact-card">
+            <h2>¿Deseas conocer "El Rinconcito"?</h2>
+            <p style="margin-top: 15px; font-size: 1.1rem;">Propiedad al día en documentación, tradición, escrituras e impuestos, lista para traspaso inmediato.</p>
+            <p style="font-weight: bold; margin-top: 10px;">Venta directa con el propietario, sin intermediarios.</p>
+            <a href="https://wa.me/57XXXXXXXXXX" class="btn-contact" target="_blank">📞 Contactar por WhatsApp / Agendar Cita</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Finca Campestre El Rinconcito - Vereda Barcelona, Villavicencio.</p>
+    </footer>
+
+</body>
+</html>
