@@ -10,7 +10,8 @@
             --primary-light: #448654;
             --secondary: #8d775f;
             --dark: #222222;
-            --light: #f4f7f5;
+            /* Aplicado el color Oleo gris-blanco de tu paleta */
+            --light: #d2cac0;
             --white: #ffffff;
             --shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
@@ -74,6 +75,10 @@
             margin-bottom: 30px;
             box-shadow: var(--shadow);
             border-left: 5px solid var(--primary);
+            /* Sutil borde para definir la tarjeta sobre el nuevo fondo */
+            border-top: 1px solid rgba(0,0,0,0.03);
+            border-right: 1px solid rgba(0,0,0,0.03);
+            border-bottom: 1px solid rgba(0,0,0,0.03);
         }
 
         .section h2 {
@@ -211,9 +216,9 @@
         footer {
             text-align: center;
             padding: 30px 20px;
-            color: #777777;
+            color: #555555;
             font-size: 0.9rem;
-            border-top: 1px solid #e2e8e4;
+            border-top: 1px solid rgba(0,0,0,0.08);
         }
 
         @media (max-width: 768px) {
@@ -226,14 +231,14 @@
 <body>
 
     <header>
-        <h1>VENDO FINCA CAMPESTRE "EL RINCONCITO"</h1>
-        <p>Diseño, confort térmico, tranquilidad y conectividad total - Vereda Barcelona (Villavicencio -Meta)</p>
+        <h1>FINCA CAMPESTRE "EL RINCONCITO"</h1>
+        <p>Diseño, confort térmico, tranquilidad y conectividad total en la Vereda Barcelona (Villavicencio)</p>
         <div class="price-tag">$530.000.000 COP</div>
     </header>
 
     <div class="container">
         
-        <!-- INFORMACIÓN GENERAL -->
+        <!-- PRESENTACIÓN GENERAL -->
         <div class="section">
             <h2>Presentación General</h2>
             <p>Ubicada en una de las zonas campestres de mayor valorización y tranquilidad de Villavicencio, la Finca "El Rinconcito" es una propiedad que combina el confort y la tranquilidad con el disfrute de la naturaleza llanera. Con un terreno plano de 1.280 m² (que se amplía hacia el fondo garantizando total privacidad), esta propiedad fue planificada para ofrecer una experiencia de descanso cómoda, sostenible y de muy bajo costo de mantenimiento.</p>
@@ -259,7 +264,7 @@
         <!-- 2. DESCRIPCIÓN ESPACIAL -->
         <div class="section">
             <h2>2. Descripción General y Distribución Espacial</h2>
-            <p style="margin-bottom: 20px;">Emplazada sobre un generoso terreno plano de 1.280 m² que se ensancha hacia el fondo (50 Mts) para ofrecer mayor privacidad, la propiedad cuenta con una casa campestre de dos plantas diseñada bajo una óptima distribución y aprovechamiento de la luz y el aire:</p>
+            <p style="margin-bottom: 20px;">Emplazada sobre un generoso terreno plano de 1.280 m² que se ensancha hacia el fondo para ofrecer mayor privacidad, la propiedad cuenta con una casa campestre de dos pisos diseñada bajo una óptima distribución y aprovechamiento de la luz y el aire:</p>
             
             <div class="grid-3">
                 <div class="grid-item">
@@ -286,16 +291,16 @@
             </div>
         </div>
 
-        <!-- 3. VENTAJAS TÉCNICAS -->
+        <!-- 3. GRANDES PUNTOS A FAVOR -->
         <div class="section">
-            <h2>3. Otras Razones para Elegir "El Rinconcito"</h2>
+            <h2>3. Grandes Puntos a Favor e Infraestructura</h2>
             <p style="margin-bottom: 15px;"><strong>Infraestructura Inteligente y Alta Eficiencia Operativa:</strong> La propiedad fue concebida bajo criterios técnicos de autonomía y confort:</p>
             <ul>
                 <li><strong>Confort Térmico y Durabilidad (Cubierta Tipo Colonial Verde):</strong> Estructura protegida con láminas de acero preformadas tipo teja colonial de color verde. Combina una estética campestre impecable con alta resistencia climática y aislamiento térmico natural.</li>
                 <li><strong>Diseño Paisajístico y Mitigación Hidráulica (El Caño):</strong> El costado derecho de la propiedad colinda con un caño natural que ha sido intervenido con <strong>12 metros lineales de revestimiento artesanal en piedra</strong>. Esta magnífica obra civil de ingeniería y paisajismo estabiliza y encauza el cuerpo de agua de forma limpia y estética.</li>
                 <li><strong>Conectividad Total de Alta Velocidad:</strong> Cuenta con servicio activo de <strong>Internet por Fibra Óptica</strong>, un atributo escaso y muy valorado en zonas campestres que permite el teletrabajo sin interrupciones.</li>
                 <li><strong>Autonomía en Suministro de Agua:</strong> Sistema de abastecimiento independiente mediante <strong>aljibe propio y motobomba</strong>, el cual surte un tanque elevado de reserva de 500 litros que distribuye por gravedad (costo de factura de agua equivalente a cero $0).</li>
-                <li><strong>Servicios Públicos y Proyección de Gas:</strong> Red de energía eléctrica convencional que incluye el servicio de recolección de basuras (martes, jueves y sábados) mensual. Cocción actual con gas propano (cilindro), con posibilidades de conexión a la red de gas natural, que se encuentra disponible de forma subterránea en la vía de acceso para una conexión domiciliaria directa a futuro.</li>
+                <li><strong>Servicios Públicos y Proyección de Gas:</strong> Red de energía eléctrica convencional con recolección de basuras mensual. Cocción actual con gas propano (cilindro), con la red de gas natural ya disponible de forma subterránea en la vía de acceso para una conexión domiciliaria directa a futuro.</li>
             </ul>
             <div class="img-container">
                 <img src="muro.png" alt="Obra Civil y Revestimiento de Piedra en el Caño">
@@ -334,13 +339,13 @@
             </div>
         </div>
 
-        <!-- 5. CONDICIONES COMERCIALES AND CONTACTO -->
+        <!-- 5. CONDICIONES COMERCIALES Y CONTACTO -->
         <div class="section contact-card">
             <h2>¿Deseas más información o agendar una visita?</h2>
             <p style="margin-top: 15px; font-size: 1.1rem;">Propiedad al día en documentación, tradición, escrituras e impuestos, lista para traspaso inmediato.</p>
             <p style="font-weight: bold; margin-top: 10px; margin-bottom: 5px;">Precio de Venta: $530.000.000 COP</p>
             <p style="font-size: 0.95rem; opacity: 0.9;">Venta directa con el propietario, sin intermediarios.</p>
-            <a href="https://wa.me/573106668492" class="btn-contact" target="_blank">📞 Contactar por WhatsApp / Solicitar Cita</a>
+            <a href="https://wa.me/57XXXXXXXXXX" class="btn-contact" target="_blank">📞 Contactar por WhatsApp / Solicitar Cita</a>
         </div>
 
     </div>
