@@ -10,7 +10,6 @@
             --primary-light: #448654;
             --secondary: #8d775f;
             --dark: #222222;
-            /* Aplicado el color Oleo gris-blanco de tu paleta */
             --light: #d2cac0;
             --white: #ffffff;
             --shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -75,7 +74,6 @@
             margin-bottom: 30px;
             box-shadow: var(--shadow);
             border-left: 5px solid var(--primary);
-            /* Sutil borde para definir la tarjeta sobre el nuevo fondo */
             border-top: 1px solid rgba(0,0,0,0.03);
             border-right: 1px solid rgba(0,0,0,0.03);
             border-bottom: 1px solid rgba(0,0,0,0.03);
@@ -195,6 +193,29 @@
             border-bottom: 1px solid rgba(255,255,255,0.2);
         }
 
+        .emails-container {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .emails-container p {
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+        }
+
+        .email-link {
+            display: inline-block;
+            color: var(--white);
+            text-decoration: underline;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .email-link:hover {
+            color: #e0f2e9;
+        }
+
         .btn-contact {
             display: inline-block;
             background-color: var(--white);
@@ -203,7 +224,7 @@
             font-weight: bold;
             text-decoration: none;
             border-radius: 6px;
-            margin-top: 25px;
+            margin-top: 20px;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
@@ -225,6 +246,7 @@
             header h1 { font-size: 2rem; }
             header p { font-size: 1.1rem; }
             .section { padding: 20px; }
+            .email-link { display: block; margin: 8px 0; }
         }
     </style>
 </head>
@@ -294,7 +316,7 @@
         <!-- 3. GRANDES PUNTOS A FAVOR -->
         <div class="section">
             <h2>3. Grandes Puntos a Favor e Infraestructura</h2>
-            <p style="margin-bottom: 15px;"><strong>Infraestructura Inteligente y Alta Eficiencia Operativa:</strong> La propiedad fue concebida bajo criterios técnicos de autonomía y confort:</p>
+            <p style="margin-bottom: 15px;"><strong>Infraestructura Inteligente and Alta Eficiencia Operativa:</strong> La propiedad fue concebida bajo criterios técnicos de autonomía y confort:</p>
             <ul>
                 <li><strong>Confort Térmico y Durabilidad (Cubierta Tipo Colonial Verde):</strong> Estructura protegida con láminas de acero preformadas tipo teja colonial de color verde. Combina una estética campestre impecable con alta resistencia climática y aislamiento térmico natural.</li>
                 <li><strong>Diseño Paisajístico y Mitigación Hidráulica (El Caño):</strong> El costado derecho de la propiedad colinda con un caño natural que ha sido intervenido con <strong>12 metros lineales de revestimiento artesanal en piedra</strong>. Esta magnífica obra civil de ingeniería y paisajismo estabiliza y encauza el cuerpo de agua de forma limpia y estética.</li>
@@ -344,8 +366,17 @@
             <h2>¿Deseas más información o agendar una visita?</h2>
             <p style="margin-top: 15px; font-size: 1.1rem;">Propiedad al día en documentación, tradición, escrituras e impuestos, lista para traspaso inmediato.</p>
             <p style="font-weight: bold; margin-top: 10px; margin-bottom: 5px;">Precio de Venta: $530.000.000 COP</p>
-            <p style="font-size: 0.95rem; opacity: 0.9;">Venta directa con el propietario, sin intermediarios.</p>
-            <a href="https://wa.me/57XXXXXXXXXX" class="btn-contact" target="_blank">📞 Contactar por WhatsApp / Solicitar Cita</a>
+            <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 10px;">Venta directa con el propietario, sin intermediarios.</p>
+            
+            <!-- Enlace directo corregido a tu número de WhatsApp -->
+            <a href="https://wa.me/573106668492?text=Hola,%20estoy%20interesado%20en%20recibir%20información%20sobre%20la%20Finca%20El%20Rinconcito" class="btn-contact" target="_blank">📞 Contactar por WhatsApp</a>
+            
+            <!-- Nueva sección elegante para los correos solicitados -->
+            <div class="emails-container">
+                <p>O si prefieres, escríbenos a nuestros correos electrónicos:</p>
+                <a href="mailto:dediaz99@gmail.com" class="email-link">✉ dediaz99@gmail.com</a>
+                <a href="mailto:luisenriquediazy2k@gmail.com" class="email-link">✉ luisenriquediazy2k@gmail.com</a>
+            </div>
         </div>
 
     </div>
